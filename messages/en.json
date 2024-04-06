@@ -1,0 +1,22 @@
+{
+    "Index": {
+        "title": "Home",
+        "description": "This is the home page.",
+        "herosub": "We are experts in digital development, specialized in creating standout applications and websites.",
+        "rich": "This is a <important>rich</important> text.",
+        "globalDefaults": "<highlight>{globalString}</highlight>"
+    },
+    "Navigation": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Projects",
+        "agency": "Agency"
+    },
+    "Languajes": {
+        "en": "English",
+        "es": "Spanish"
+    },
+    "LocaleSwitcher": {
+        "switchLocale": "Switch to {locale, select, de {German} en {English} other {Unknown}}"
+    }
+}

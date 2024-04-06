@@ -1,0 +1,22 @@
+{
+    "Index": {
+        "title": "Inicio",
+        "description": "Esta es la página de inicio.",
+        "herosub": "Somos expertos en desarrollo digital, especializados en crear aplicaciones y páginas web que destacan",
+        "rich": "Este es un texto <important>importante</important>.",
+        "globalDefaults": "<highlight>{globalString}</highlight>"
+    },
+    "Navigation": {
+        "home": "Inicio",
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "agency": "Agencia"
+    },
+    "Languajes": {
+        "en": "Inglés",
+        "es": "Español"
+    },
+    "LocaleSwitcher": {
+        "switchLocale": "Cambiar a {locale, select, de {Alemán} en {Inglés} other {Desconocido}}"
+    }
+}
