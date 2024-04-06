@@ -8,9 +8,13 @@
     },
     "Navigation": {
         "home": "Home",
+        "homeQuote": "This is the text for Home menu",
         "services": "Services",
+        "servicesQuote": "This is the text for Services menu",
         "projects": "Projects",
-        "agency": "Agency"
+        "projectsQuote": "This is the text for Projects menu",
+        "agency": "Agency",
+        "agencyQuote": "This is the text for Agency menu"
     },
     "Languajes": {
         "en": "English",

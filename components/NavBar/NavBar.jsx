@@ -1,10 +1,11 @@
 
 import Logo from './Logo'
-
-import { menus } from '@/data'
-import { pathnames, Link } from '@/navigation'
-import LangSelector from './LangSelector'
 import { getTranslator } from '../helpers'
+import { Link } from '@/navigation'
+import { menus } from '@/data'
+import LangSelector from './LangSelector'
+import MenuMobile from './MenuMobile'
+
 
 
 async function NavBar(props) {
@@ -22,10 +23,13 @@ async function NavBar(props) {
             <Link className="flex items-center gap-2 p-2" href='/'>
                 <Logo className="h-6 "></Logo> KaotiCode
             </Link>
-            <div className="flex items-center gap-2 p-2">
+            <div className="hidden lg:flex items-center gap-2 p-2">
                 {MenuLinks}
+
                 <LangSelector selected={locale} />
             </div>
+            <MenuMobile />
+
 
         </nav>
 
