@@ -1,9 +1,10 @@
-import Hero from "@/components/Hero"
+import Hero, { ServicesIndex } from "@/components/Hero"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className=" min-h-screen w-full">
       <Hero></Hero>
+      <ServicesIndex />
     </main>
   )
 }

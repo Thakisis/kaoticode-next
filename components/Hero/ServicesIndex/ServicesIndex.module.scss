@@ -1,0 +1,14 @@
+.wordBG {
+    &::before {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 13VW;
+        position: absolute;
+        font-weight: bolder;
+        inset: 0;
+        z-index: -1;
+
+
+    }
+}

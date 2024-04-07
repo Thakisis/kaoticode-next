@@ -18,7 +18,7 @@ async function NavBar(props) {
     return (
 
         <nav
-            className="flex absolute px-3 py-5 h-10 z-30 top-0 left-0 w-screen text-white justify-between "
+            className="flex absolute w-full px-3 py-5 h-10 z-30 top-0 left-0 text-white justify-between "
         >
             <Link className="flex items-center gap-2 p-2" href='/'>
                 <Logo className="h-6 "></Logo> KaotiCode

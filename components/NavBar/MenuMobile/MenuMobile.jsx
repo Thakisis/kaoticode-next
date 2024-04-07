@@ -4,11 +4,12 @@ import MenuMobileClient from './MenuMobileClient'
 import { menus } from '@/data'
 import { getTranslator } from '@/components/helpers'
 import { Playfair } from 'next/font/google'
+import LangList from '../LangSelector/LangList'
 const playfair = Playfair({ subsets: ["latin"] })
 
 async function MenuMobile(props) {
     const { t, locale } = await getTranslator('Navigation')
-
+    const Languages = <LangList />
     const MenuLinks = menus.map((menu) =>
     (
 
@@ -21,12 +22,16 @@ async function MenuMobile(props) {
     return (
         <div className="lg:hidden items-center gap-2">
             <MenuMobileClient className="relative navbar-burger flex items-center text-white pr-3 z-50">
-                <div className='fixed  pb-5 flex flex-col bg-gray-900 inset-0 z-30  w-full items-center '>
-                    <div className=' py-5 flex flex-col  flex-1 justify-around'>
-                        {MenuLinks}
+
+                <div className='py-3 flex flex-col inset-0 z-30  w-full items-center '>
+                    <div className='flex w-full  justify-between pt-10 px-20'>
+                        <LangList></LangList>
                     </div>
-                    <div>english</div>
-                    <div>spanish</div>
+                    <div className=' py-5 flex flex-col  flex-1 justify-around '>
+                        {MenuLinks}
+
+                    </div>
+
                 </div>
             </MenuMobileClient>
 

@@ -8,6 +8,7 @@ function Logo(props) {
             viewBox="0 0 200 200"
             {...props}
         >
+            <title>KaotiCode logotype</title>
             <path
 
                 fill="#1ca1ff"
