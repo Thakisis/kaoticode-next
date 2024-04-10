@@ -2,6 +2,7 @@ import GlassWeb from '@/components/GlassWeb'
 import styles from './ShowCaseIndex.module.scss'
 import { promises as fs } from 'fs'
 import { getTranslator } from '@/components/helpers'
+import { Projects } from '@/data'
 export async function ShowCaseIndex(props) {
     const { t } = await getTranslator('Index')
 
@@ -29,7 +30,6 @@ export async function ShowCaseIndex(props) {
 
 async function ProjectList() {
     const { t } = await getTranslator('Projects')
-    const file = await fs.readFile(process.cwd() + '/app/Data/Projects.json', 'utf8')
-    const data = JSON.parse(file)
-    return data.map(({ Id, name, preview }) => <GlassWeb image={`/images/Projects/${preview}.webp`} title={t(name)} key={Id} />)
+
+    return Projects.map(({ Id, name, preview }) => <GlassWeb image={`/images/Projects/${preview}.webp`} title={t(name)} key={Id} />)
 }
