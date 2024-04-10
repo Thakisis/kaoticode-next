@@ -1,17 +1,22 @@
 import { headers } from 'next/headers'
 import { notFound } from 'next/navigation'
 import { getRequestConfig } from 'next-intl/server'
-import defaultMessages from '/messages/en.json'
 import { locales } from './navigation'
 
 export default getRequestConfig(async ({ locale }) => {
-    // Validate that the incoming `locale` parameter is valid
+
     if (!locales.includes(locale)) notFound()
 
     const now = headers().get('x-now')
     const timeZone = headers().get('x-time-zone') ?? 'Europe/Vienna'
-    const localeMessages = (await import(`/messages/${locale}.json`)).default
-    const messages = { ...defaultMessages, ...localeMessages }
+    const localeMessages = {
+        Navigation: { ...(await import(`/messages/${locale}/Navigation.json`)).default },
+        Languajes: { ...(await import(`/messages/${locale}/Languajes.json`)).default },
+        Index: { ...(await import(`/messages/${locale}/Home.json`)).default },
+        Projects: { ...(await import(`/messages/${locale}/Projects.json`)).default }
+
+    }
+    const messages = { ...localeMessages }
 
     return {
         now: now ? new Date(now) : undefined,

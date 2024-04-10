@@ -1,0 +1,39 @@
+.title {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0px;
+        color: black;
+        font-size: 1.9rem;
+        font-weight: 900;
+
+
+
+        left: -2.5rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-image: radial-gradient(circle farthest-corner at right bottom, rgba(255, 255, 255, 1) 49%, rgba(255, 255, 255, 0) 50%);
+        background-size: auto;
+        background-position: 0% 0%;
+        background-repeat: repeat;
+        background-color: rgba(0, 0, 0, 0);
+
+
+
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: -10px;
+        left: 10%;
+        right: 10%;
+        height: 3px;
+        background-color: white;
+
+    }
+}

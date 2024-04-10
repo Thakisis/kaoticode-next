@@ -13,4 +13,61 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+
+  .text-horizontal {
+
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+  }
+
+  .text-vertical {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+  }
+
+  .inner-shadow {
+
+
+    background-clip: text;
+
+  }
+
+  .inner-shadow:before {
+
+    content: attr(title);
+    mix-blend-mode: darken;
+    background-color: #666666;
+    color: transparent;
+    text-shadow: 3px 3px 15px rgb(255, 255, 255);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+    position: absolute;
+  }
+
+
+}
+
+.inner-shadow-images {
+
+  background: url(/images/KaotiWebBG.webp);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+}
+
+.inner-shadow-images:before {
+
+
+  content: attr(title);
+  mix-blend-mode: darken;
+  background-color: #000000;
+  color: transparent;
+  text-shadow: 3px 3px 15px rgb(255, 255, 255);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+
+  position: absolute;
 }

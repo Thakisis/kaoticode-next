@@ -13,19 +13,14 @@ async function Hero(props) {
 
             <div className="z-10 relative items-center justify-center ">
                 <div className='w-full h-screen'>
-                    <div className="absolute inset-0">
-                        <Image src='/images/code.jpg' fill className='codeImage' alt="Image showing Code" />
-                    </div>
-                    <div className="absolute inset-0    ">
-                        <Image src='/images/code.jpg' fill className='codeImageBlur' alt="Image showing Code" />
-                    </div>
+
                     <div
 
                         className="relative w-full   z-30 container flex flex-col items-center justify-center h-screen max-w-6xl pl-0 mx-auto  sm:pl-8 xl:pl-0 md:flex-row md:justify-between"
                     >
                         <div className="flex flex-col items-center justify-center mx-auto">
                             <div className="relative text-center ">
-                                <h1 className="textcol text-white relative mb-4 text-6xl font-bold font-sans italic leading-none text-center lg:text-9xl xl:text-9xl">
+                                <h1 className="textcol text-white relative mb-4 text-6xl font-bold font-sans italic leading-none text-center lg:text-9xl xl:text-9xl  opacity-0">
                                     <span className="kaoti">Kaoti</span><span className="dot">.</span><span className='code'>Code</span><span>:</span><span className="cursor">|</span>
                                 </h1>
                                 <p className="text-gray-200 text-sm lg:text-3xl lg:text-center font-sans italic">
